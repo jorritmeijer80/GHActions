@@ -23,7 +23,7 @@ jobs:
       uses: Azure/login@v1.1
       with:
         # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
-        creds: ${{ secrets.SERVICE_CREDS }}
+        creds: ${{ secrets.JORRITMEIJERORG_SP }}
 
     # Runs a set of commands using the runners shell
     - name: Deploy ARM Template
